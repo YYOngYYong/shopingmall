@@ -7,6 +7,6 @@ function loadItems() {
 
 //main
 loadItems()
-  //promise가 return이 되면~
+  //promise가 return이 되면
   .then((items) => {})
   .catch(console.log);
