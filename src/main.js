@@ -21,17 +21,22 @@ function createHTMLString(item) {
   `;
 }
 
+//각 버튼 클릭하였을 때 필터링
 function onButtonClick(event, items) {
   const dataset = event.target.dataset;
   const key = dataset.key;
   const value = dataset.value;
 
+  //버튼 전체를 지정하였기때문에 null일 경우에는 return;
   if (key == null || value == null) {
     return;
   }
 
   displayItems(items.filter((item) => item[key] === value));
 }
+
+//로고 누르면 전체 아이템 리스트
+// 버튼 누르면 각 아이템 필터링
 
 function setEventListeners(items) {
   const logo = document.querySelector(".logo");
