@@ -8,7 +8,7 @@ function loadItems() {
 // 동적으로 아이템리스트 출력
 function displayItems(items) {
   const contaniner = document.querySelector(".items");
-  contaniner.innerHTML = items.map((item) => createHTMLString(item));
+  contaniner.innerHTML = items.map((item) => createHTMLString(item)).join("");
 }
 
 // 아이템 목록 보여주는 li 리스트
