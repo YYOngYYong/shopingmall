@@ -21,7 +21,7 @@ function createHTMLString(item) {
   `;
 }
 
-//각 버튼 클릭하였을 때 필터링
+//각 버튼 클릭하였을 때 필터링.
 function onButtonClick(event, items) {
   const dataset = event.target.dataset;
   const key = dataset.key;
